@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/action_fit_polygon"
+        android:icon="@drawable/ic_location_pin"
+        android:title="Fit to Area"
+        app:showAsAction="ifRoom" />
+    <item
+        android:id="@+id/action_layers"
+        android:icon="@drawable/ic_layers"
+        android:title="Map Style"
+        app:showAsAction="ifRoom" />
+</menu>

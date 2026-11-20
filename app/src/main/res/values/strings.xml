@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Employee Hub</string>
+    <string name="title_employees">Employees</string>
+    <string name="title_add_employee">Add Employee</string>
+    <string name="title_edit_employee">Edit Employee</string>
+    <string name="title_map_area">Employee Map Area</string>
+
+    <!-- Search & Filter -->
+    <string name="search_hint">Search by name, ID, department…</string>
+    <string name="filter_all">All</string>
+    <string name="filter_active">Active</string>
+    <string name="filter_inactive">Inactive</string>
+    <string name="filter_geofenced">Geofenced Only</string>
+    <string name="sort_by">Sort by</string>
+    <string name="sort_name_asc">Name (A–Z)</string>
+    <string name="sort_name_desc">Name (Z–A)</string>
+    <string name="sort_id_asc">ID (Low–High)</string>
+    <string name="sort_id_desc">ID (High–Low)</string>
+
+    <!-- Dashboard Stats -->
+    <string name="stat_total">Total</string>
+    <string name="stat_active">Active</string>
+    <string name="stat_docs">Documents</string>
+    <string name="stat_geofenced">Mapped</string>
+
+    <!-- Employee Card -->
+    <string name="active">Active</string>
+    <string name="inactive">Inactive</string>
+    <string name="label_department">Dept: #%1$d</string>
+    <string name="label_manager">Mgr: #%1$d</string>
+    <string name="label_branch">Branch: #%1$d</string>
+    <string name="label_documents">Documents (%1$d)</string>
+    <string name="label_no_documents">No documents uploaded</string>
+    <string name="btn_map">Map Area</string>
+    <string name="btn_edit">Edit</string>
+    <string name="btn_delete">Delete</string>
+    <string name="geofenced_badge">📍 Area Defined (%1$d pts)</string>
+    <string name="no_geofence_badge">📍 No Area Defined</string>
+
+    <!-- Add/Edit Form -->
+    <string name="label_employee_id">Employee ID</string>
+    <string name="label_employee_name">Employee Name *</string>
+    <string name="label_dept_id">Department ID *</string>
+    <string name="label_mgr_id">Manager ID *</string>
+    <string name="label_branch_id">Branch ID *</string>
+    <string name="label_is_active">Employee Active Status</string>
+    <string name="btn_save_employee">Save Employee</string>
+    <string name="btn_add_document">+ Add Document</string>
+    <string name="error_name_required">Employee name is required</string>
+    <string name="error_dept_required">Department ID is required</string>
+    <string name="error_mgr_required">Manager ID is required</string>
+    <string name="error_branch_required">Branch ID is required</string>
+
+    <!-- Document Dialog -->
+    <string name="title_add_document">Add Document</string>
+    <string name="label_doc_name">Document Name *</string>
+    <string name="label_doc_type">Document Type (JPG, PNG, PDF)</string>
+    <string name="label_doc_url">Document URL</string>
+    <string name="label_thumbnail_url">Thumbnail URL</string>
+    <string name="label_doc_verified">Mark as Verified</string>
+    <string name="btn_add">Add</string>
+    <string name="btn_cancel">Cancel</string>
+
+    <!-- Delete Confirmation -->
+    <string name="dialog_delete_title">Delete Employee</string>
+    <string name="dialog_delete_message">Are you sure you want to delete %1$s (ID: #%2$d)?\n\nThis will permanently delete the employee record along with all associated documents and saved map geofence areas.</string>
+    <string name="btn_confirm_delete">Delete</string>
+    <string name="employee_deleted">Employee deleted</string>
+    <string name="action_undo">Undo</string>
+
+    <!-- Map Screen -->
+    <string name="map_hint_instruction">Tap map to add vertices • Drag marker to move • Tap marker to delete</string>
+    <string name="btn_save_polygon">Save Area</string>
+    <string name="btn_clear_polygon">Clear</string>
+    <string name="btn_undo_point">Undo</string>
+    <string name="label_vertices">Vertices: %1$d</string>
+    <string name="label_area">Area: %1$s</string>
+    <string name="label_perimeter">Perimeter: %1$s</string>
+    <string name="polygon_saved_success">Polygon area saved successfully!</string>
+    <string name="polygon_cleared_success">Polygon area cleared.</string>
+    <string name="polygon_need_more_points">Please add at least 3 points to form a polygon.</string>
+    <string name="dialog_clear_polygon_title">Clear Polygon?</string>
+    <string name="dialog_clear_polygon_message">Are you sure you want to clear the saved map area for this employee?</string>
+
+    <!-- Empty and Error States -->
+    <string name="empty_title">No Employees Found</string>
+    <string name="empty_subtitle">Try adjusting your search query or filters.</string>
+    <string name="btn_refresh">Refresh Data</string>
+    <string name="sync_success">Employee data synced successfully</string>
+    <string name="sync_offline">Offline mode: Showing cached data from Room DB</string>
+</resources>

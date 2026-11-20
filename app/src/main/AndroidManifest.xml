@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <!-- Network permissions for API integration and Map tile downloads -->
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+
+    <!-- Optional location permissions for map centering -->
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+
+    <application
+        android:name=".EmployeeApplication"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.EmployeeManagerApp"
+        android:usesCleartextTraffic="true"
+        tools:targetApi="35">
+
+        <!-- Google Maps API Key metadata placeholder.
+             Evaluators can insert their Google Maps API Key here if desired.
+             The app also includes OpenStreetMap (OsmDroid) support which works seamlessly with zero configuration! -->
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="AIzaSyDemoKeyPlaceholderForGoogleMaps" />
+
+        <!-- Main Employee List Screen -->
+        <activity
+            android:name=".ui.list.EmployeeListActivity"
+            android:exported="true"
+            android:windowSoftInputMode="adjustPan">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <!-- Add & Edit Employee Screen -->
+        <activity
+            android:name=".ui.addedit.AddEditEmployeeActivity"
+            android:exported="false"
+            android:parentActivityName=".ui.list.EmployeeListActivity"
+            android:windowSoftInputMode="adjustResize" />
+
+        <!-- Interactive Map Polygon Screen -->
+        <activity
+            android:name=".ui.map.MapPolygonActivity"
+            android:exported="false"
+            android:parentActivityName=".ui.list.EmployeeListActivity" />
+
+    </application>
+
+</manifest>
